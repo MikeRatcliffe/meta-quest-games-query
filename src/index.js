@@ -31,12 +31,18 @@ const filter = (game) => {
   console.log(`${filtered.size} results:`);
 
   for (const game of filtered) {
+    const {
+      displayName,
+      genre_names,
+      id,
+      release_channels: { count },
+    } = game;
+    const { BRIGHT, RED, RESET, DIM } = COLOR;
+    const preOrderString = count === 0 ? " Pre-order" : "";
+    const genres = ` (${genre_names.join(", ")}) `;
+
     console.log(
-      `  - ${COLOR.BRIGHT}${game.displayName} ${
-        COLOR.RESET
-      }(${game.genre_names.join(", ")}) ${
-        COLOR.DIM
-      }https://www.oculus.com/experiences/quest/${game.id}${COLOR.RESET}`
+      `  - ${BRIGHT}${displayName}${RED}${preOrderString}${RESET}${genres}${DIM}https://www.oculus.com/experiences/quest/${id}${COLOR.RESET}`
     );
   }
 })();
