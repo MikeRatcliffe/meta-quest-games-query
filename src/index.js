@@ -32,7 +32,11 @@ const filter = (game) => {
 
   for (const game of filtered) {
     console.log(
-      `  - ${COLOR.BRIGHT}${game.displayName} ${COLOR.DIM}https://www.oculus.com/experiences/quest/${game.id}${COLOR.RESET}`
+      `  - ${COLOR.BRIGHT}${game.displayName} ${
+        COLOR.RESET
+      }(${game.genre_names.join(", ")}) ${
+        COLOR.DIM
+      }https://www.oculus.com/experiences/quest/${game.id}${COLOR.RESET}`
     );
   }
 })();

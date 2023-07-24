@@ -20,7 +20,7 @@ npm run generateGameList
 
 ### Display The Games List
 
-This displays the list of games along with their meta URLs. This list is filtered according to the filters used in `index.js`.
+This displays the list of games along with their genres and meta URLs. This list is filtered according to the filters in `index.js`.
 
 ```js
 npm start
