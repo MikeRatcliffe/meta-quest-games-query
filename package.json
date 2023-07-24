@@ -1,0 +1,25 @@
+{
+  "name": "meta-quest-games-query",
+  "version": "1.0.0",
+  "description": "Generates a list of Quest games that are supported on the Quest 2 and not on Quest 1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MikeRatcliffe/meta-quest-games-query"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "generateGameList": "node src/generateGameList",
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Ratcliffe <michael@ratcliffefamily.org>",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.12",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0"
+  }
+}
