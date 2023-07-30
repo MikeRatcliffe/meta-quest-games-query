@@ -9,6 +9,9 @@
   "main": "src/index.js",
   "scripts": {
     "generateGameList": "node src/generateGameList",
+    "grabImages1": "node src/grabImages1",
+    "grabImages2": "node src/grabImages2",
+    "grabImages3": "node src/grabImages3",
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +20,8 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "node-fetch": "^2.6.12",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "sharp": "^0.32.4"
   },
   "devDependencies": {
     "eslint": "^8.45.0"

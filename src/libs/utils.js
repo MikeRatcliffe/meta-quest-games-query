@@ -46,8 +46,13 @@ function getHeadsetCodeName(headsetName) {
   throw new Error("Invalid headset name");
 }
 
+async function sleep(ms) {
+  return new Promise((resolve) => setInterval(resolve, ms));
+}
+
 module.exports = {
   COLOR: COLOR,
   getHeadsetCodeName,
   jsonFilename,
+  sleep,
 };
